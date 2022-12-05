@@ -1,5 +1,6 @@
 module "aws_user" {
-  source = "github.com/ptonini/terraform-aws-iam-user"
+  source = "ptonini/iam-user/aws"
+  version = "~> 1.0.0"
   username = var.username
   access_key = true
   policy_statements = [
